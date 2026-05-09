@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaho.Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"
+        integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css"
+        integrity="sha384-6iv3tXABd3c9DYulXujJl8n22ahn/12f45MomxoPv6jBX4LBE4gNJjfkx5mAKIqR" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <a href="#top" class="nav-logo">Kaho.Portfolio</a>
+
+        <ul class="nav-links">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger" aria-label="メニューを開く">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#top" onclick="closeMenu()">Top</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#works" onclick="closeMenu()">Works</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="top">
+        <div class="hero-bg">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+        </div>
+
+        <!-- 実際の写真があれば src="" に差し替えてください -->
+        <!-- <img src="your-photo.png" alt="Sumikawa Kaho" class="hero-img" /> -->
+
+        <div class="hero-content reveal">
+            <h1>Sumikawa Kaho</h1>
+            <h2>Portfolio Site</h2>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-pink">About</a>
+                <a href="#works" class="btn btn-outline">Works</a>
+                <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About me</h2>
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <!-- <img src="your-photo.jpg" alt="角川 花歩" /> -->
+                    <div
+                        style="width:100%;height:100%;background:linear-gradient(160deg,#F8BBD0,#F06292,#FFCCBC);display:flex;align-items:center;justify-content:center;font-size:4rem;">
+                        🌸</div>
+                </div>
+                <div class="about-info reveal reveal-delay-2">
+                    <h3>角川　花歩</h3>
+                    <span class="about-name-en">Sumikawa Kaho</span>
+                    <p>
+                        大阪出身。2005年生まれ。大学3年生として、近畿大学経営学部に在籍しています。<br><br>
+                        ものづくりが好きで、プログラミングスクールに通いながら HTML/CSS・JavaScript を独学で習得しました。
+                        フロントエンド開発を中心に学習を続けており、デザインと実装の両方に興味を持っています。<br><br>
+                        将来はWebエンジニアやWebデザイナーとして活躍することを目標に、日々スキルアップに励んでいます。
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">大阪出身</span>
+                        <span class="tag">近畿大学</span>
+                        <span class="tag">経営学部</span>
+                        <span class="tag">フロントエンド志望</span>
+                        <span class="tag">2028年卒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon">
+                        <i class="devicon-aarch64-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+
+                    </div>
+                    <h4>HTML / CSS</h4>
+                    <p>UdemyやプログラミングスクールでHTMLの基本的な書き方から学びました。TailwindCSS・Bootstrapなども学習済みです。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon">
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>インタラクティブなWebページを作るため、DOM操作やイベント処理など、JavaScriptの基礎を学んでいます。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon">
+                        <i class="devicon-typescript-plain colored"></i>
+                    </div>
+                    <h4>TypeScript</h4>
+                    <p>型安全なコーディングを目指してTypeScriptの学習を進めています。開発効率の向上に役立てています。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon">
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    </div>
+                    <h4>Node.js</h4>
+                    <p>サーバーサイドの基礎として Node.js を学習中。バックエンドとの連携方法についても理解を深めています。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon">
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                    </div>
+                    <h4>MySQL</h4>
+                    <p>データベース設計やCRUD操作など、MySQLを使ったデータ管理の基礎を習得しています。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon">
+                        <i class="devicon-csharp-plain colored"></i>
+                    </div>
+                    <h4>C# / Unity</h4>
+                    <p>Udemyを通じてC#の基礎を学び、Unityでミニゲームを開発しています。将来的にはSteamでの公開を目指しています。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon">
+                        <i class="devicon-react-original colored"></i>
+                    </div>
+                    <h4>React</h4>
+                    <p>コンポーネント志向のUI開発を学ぶためReactを学習中。状態管理やHooksを活用したアプリ開発に取り組んでいます。</p>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon">
+                        <i class="devicon-blender-original colored"></i>
+                    </div>
+                    <h4>Blender</h4>
+                    <p>基本操作をYouTubeで学び、ローポリモデリングを実践中。3Dモデルを動かせた瞬間がとても楽しかったです。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTERESTS ===== -->
+    <section id="interests">
+        <div class="container">
+            <h2 class="section-title reveal">Interests & Hobbies</h2>
+            <div class="interests-grid">
+                <div class="interest-item reveal reveal-delay-1">
+                    <div class="interest-placeholder" style="background:linear-gradient(135deg,#c4956a,#8b6340);">🍫
+                    </div>
+                    <div class="interest-overlay"><span>お菓子作り</span></div>
+                </div>
+                <div class="interest-item reveal reveal-delay-2">
+                    <div class="interest-placeholder" style="background:linear-gradient(135deg,#7ec8e3,#4a90d9);">🌙
+                    </div>
+                    <div class="interest-overlay"><span>アニメ・キャラクター</span></div>
+                </div>
+                <div class="interest-item reveal reveal-delay-3">
+                    <div class="interest-placeholder" style="background:linear-gradient(135deg,#c4a8c8,#8470a0);">🐱
+                    </div>
+                    <div class="interest-overlay"><span>動物</span></div>
+                </div>
+                <div class="interest-item reveal reveal-delay-2">
+                    <div class="interest-placeholder" style="background:linear-gradient(135deg,#f0c8d8,#e080a8);">🌸
+                    </div>
+                    <div class="interest-overlay"><span>写真撮影</span></div>
+                </div>
+                <div class="interest-item reveal reveal-delay-3">
+                    <div class="interest-placeholder" style="background:linear-gradient(135deg,#b8d4c0,#789060);">🎵
+                    </div>
+                    <div class="interest-overlay"><span>音楽</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORKS ===== -->
+    <section id="works">
+        <div class="container">
+            <h2 class="section-title reveal">Works</h2>
+            <div class="works-grid">
+                <div class="work-card reveal reveal-delay-1">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder p1"></div>
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h4>Portfolio Site</h4>
+                            <span class="work-year">2025</span>
+                        </div>
+                        <div class="work-arrow">→</div>
+                    </div>
+                </div>
+                <div class="work-card reveal reveal-delay-2">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder p2"></div>
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h4>Another Project</h4>
+                            <span class="work-year">2025</span>
+                        </div>
+                        <div class="work-arrow">→</div>
+                    </div>
+                </div>
+                <div class="work-card reveal reveal-delay-3">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder p3"></div>
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h4>Favorite Project</h4>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <div class="work-arrow">→</div>
+                    </div>
+                </div>
+                <div class="work-card reveal reveal-delay-4">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder p4"></div>
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h4>Important Project</h4>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <div class="work-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <h2 class="section-title reveal">Let's work together</h2>
+        <p class="subtitle reveal reveal-delay-1">お仕事やインターンのご連絡はこちらからどうぞ</p>
+        <div class="contact-links reveal reveal-delay-2">
+            <a href="mailto:your-email@example.com" class="btn btn-pink" style="font-size:0.9rem;">✉️ メールを送る</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-icon" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="contact-icon" title="X (Twitter)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+                </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="contact-icon" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <span class="footer-logo">Kaho.Portfolio</span>
+        <span class="footer-copy">© 2025 Sumikawa Kaho. All rights reserved.</span>
+        <div class="footer-sns">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" title="X">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
