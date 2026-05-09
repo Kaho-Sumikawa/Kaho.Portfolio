@@ -1,0 +1,145 @@
+/* ===== TABLET (≤ 1024px) ===== */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    #navbar {
+        padding: 0 32px;
+    }
+
+    .about-grid {
+        grid-template-columns: 220px 1fr;
+        gap: 40px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .hero-img {
+        height: 75%;
+    }
+
+    .hero-content {
+        padding: calc(var(--nav-h) + 60px) 40px 40px;
+    }
+}
+
+/* ===== MOBILE (≤ 768px) ===== */
+@media (max-width: 768px) {
+    :root {
+        --nav-h: 56px;
+    }
+
+    section {
+        padding: 72px 0;
+    }
+
+    .container {
+        padding: 0 22px;
+    }
+
+    #navbar {
+        padding: 0 22px;
+    }
+
+    /* hide desktop nav, show hamburger */
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    /* hero */
+    .hero-img {
+        display: none;
+    }
+
+    #top {
+        height: auto;
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding: calc(var(--nav-h) + 48px) 24px 80px;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+
+    /* about */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-photo {
+        max-width: 240px;
+        margin: 0 auto;
+        aspect-ratio: 1/1;
+    }
+
+    /* skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* interests */
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 160px);
+    }
+
+    /* works */
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #contact {
+        padding: 72px 24px;
+    }
+}
+
+/* ===== VERY SMALL (≤ 480px) ===== */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+    }
+}
