@@ -1,0 +1,44 @@
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #F06292;
+    --pink-soft: #F8BBD0;
+    --pink-bg: #FCE4EC;
+    --pink-dark: #E91E8C;
+    --cream: #FFF8F0;
+    --beige: #F5EDE3;
+    --text: #2A2A2A;
+    --text-sub: #666;
+    --white: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --nav-h: 64px;
+    --section-radius: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
