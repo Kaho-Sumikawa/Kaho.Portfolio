@@ -451,6 +451,11 @@ section {
     opacity: 1;
 }
 
+.skill-icons{
+    display: flex;
+    gap: 8px;
+}
+
 .skill-icon {
     width: 42px;
     height: 42px;
