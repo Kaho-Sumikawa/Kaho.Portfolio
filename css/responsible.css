@@ -64,17 +64,30 @@
 
     /* hero */
     .hero-img {
-        display: none;
+        display: block;
+        position: static;
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+        scale: 100%;
+        object-fit: contain;
+        order: 2;
     }
 
     #top {
         height: auto;
         min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 60px;
     }
 
     .hero-content {
-        padding: calc(var(--nav-h) + 48px) 24px 80px;
+        padding: calc(var(--nav-h) + 60px) 24px 20px;
         max-width: 100%;
+        text-align: center;
+        order: 1;
     }
 
     .hero-content h1 {
@@ -106,7 +119,16 @@
     /* interests */
     .interests-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 160px);
+        grid-template-rows: auto;
+        gap: 12px;
+    }
+
+    .interests-grid .interest-item {
+        height: 160px;
+    }
+
+    .interests-grid .interest-item:last-child {
+        grid-column: span 2;
     }
 
     /* works */
@@ -126,6 +148,11 @@
     #contact {
         padding: 72px 24px;
     }
+
+    #contact .subtitle {
+        margin-top: -8px;
+        font-size: 0.95rem;
+    }
 }
 
 /* ===== VERY SMALL (≤ 480px) ===== */
@@ -141,5 +168,9 @@
     .interests-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 200px);
+    }
+
+    .interests-grid .interest-item:last-child {
+        grid-column: auto;
     }
 }
