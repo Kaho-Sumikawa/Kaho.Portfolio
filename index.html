@@ -64,7 +64,8 @@
 
         <div class="hero-content reveal">
             <div class="hero-illustration">
-                <img src="assets/img/K_illust_nomal.jpg" alt="Kaho Illustration">
+                <img class="hero-illust-nomal" src="assets/img/K_illust_nomal.jpg" alt="Kaho Illustration">
+                <img class="hero-illust-smile" src="assets/img/K_illust_smile.jpg" alt="Kaho Illustration">
             </div>
             <h1>Sumikawa Kaho</h1>
             <h2>Portfolio Site</h2>
@@ -100,6 +101,7 @@
                         現在はフロントエンド開発に興味を持ち、デザインから実装まで一貫して制作できるよう、日々学習を続けています。<br><br>
                         また、Unityを使ったゲーム制作やBlenderでの3Dモデリングにも取り組んでいます。
                     </p>
+
                     <div class="about-tags">
                         <span class="tag">大阪出身</span>
                         <span class="tag">近畿大学</span>
@@ -107,6 +109,31 @@
                         <span class="tag">フロントエンド志望</span>
                         <span class="tag">2028年卒</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHILOSOPHY ===== -->
+    <section id="philosophy">
+        <div class="container">
+            <h2 class="section-title reveal">My Axis</h2>
+            <p class="philosophy-quote reveal reveal-delay-1">誰かの頭に残るものを、作り続けたい。</p>
+            <div class="philosophy-grid">
+                <div class="philosophy-card reveal reveal-delay-1">
+                    <span class="philosophy-num">01</span>
+                    <h4>主体性</h4>
+                    <p>与えられた課題より、自分が「面白い」と思えたことのほうが寝食を忘れて没頭できます。その主体性を活かしながら、アイデアを形にすることが得意です。</p>
+                </div>
+                <div class="philosophy-card reveal reveal-delay-2">
+                    <span class="philosophy-num">02</span>
+                    <h4>創造</h4>
+                    <p>粘土作品のSNS投稿への反応をきっかけに、3Dモデリング・ゲーム開発へと独学で走り続けました。0から考えて手を動かすことが、何より好きです。</p>
+                </div>
+                <div class="philosophy-card reveal reveal-delay-3">
+                    <span class="philosophy-num">03</span>
+                    <h4>余韻</h4>
+                    <p>作りたいのは、終わったあとも誰かの頭に残るもの。フロントエンドでもゲームでも、「あの体験、よかったな」と思い出してもらえる制作をしていきたいです。</p>
                 </div>
             </div>
         </div>
@@ -233,30 +260,30 @@
         <div class="container">
             <h2 class="section-title reveal">Works</h2>
             <div class="works-grid">
-                <div class="work-card reveal reveal-delay-1">
+                <a href="https://github.com/Kaho-Sumikawa/Kaho.Portfolio" target="_blank" rel="noopener" class="work-card reveal reveal-delay-1">
                     <div class="work-thumb">
                         <div class="work-thumb-placeholder p1"></div>
                     </div>
                     <div class="work-info">
                         <div>
                             <h4>Portfolio Site</h4>
-                            <span class="work-year">2025</span>
+                            <span class="work-year">2026 · HTML / CSS / JS</span>
                         </div>
                         <div class="work-arrow">→</div>
                     </div>
-                </div>
-                <div class="work-card reveal reveal-delay-2">
+                </a>
+                <a href="https://unityroom.com/games/koinobori55" target="_blank" rel="noopener" class="work-card reveal reveal-delay-2">
                     <div class="work-thumb">
-                        <div class="work-thumb-placeholder p2"></div>
+                        <img src="assets/img/koinobori.webp" alt="こどもの日ゲーム" loading="lazy">
                     </div>
                     <div class="work-info">
                         <div>
-                            <h4>Another Project</h4>
-                            <span class="work-year">2025</span>
+                            <h4>こいのぼりゲーム</h4>
+                            <span class="work-year">2026 · Unity / C#</span>
                         </div>
                         <div class="work-arrow">→</div>
                     </div>
-                </div>
+                </a>
                 <div class="work-card reveal reveal-delay-3">
                     <div class="work-thumb">
                         <div class="work-thumb-placeholder p3"></div>
@@ -290,14 +317,14 @@
         <h2 class="section-title reveal">Contact</h2>
         <p class="subtitle reveal reveal-delay-1">メール・SNSはこちらからどうぞ</p>
         <div class="contact-links reveal reveal-delay-2">
-            <a href="mailto:sumikawa.kaho@gmail.com" class="btn btn-pink" style="font-size:0.9rem;">✉️ メールを送る</a>
+            <span class="contact-email">✉️ sumikawa.kaho@gmail.com</span>
             <a href="https://x.com/dev_K5" target="_blank" rel="noopener" class="contact-icon" title="X (Twitter)">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                     <path
                         d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
                 </svg>
             </a>
-            <a href="https://github.com/k-gappo" target="_blank" rel="noopener" class="contact-icon" title="GitHub">
+            <a href="https://github.com/Kaho-Sumikawa" target="_blank" rel="noopener" class="contact-icon" title="GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                     <path
                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
