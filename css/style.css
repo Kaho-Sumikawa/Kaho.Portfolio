@@ -866,6 +866,7 @@ section {
     color: var(--pink);
     border: 2px solid var(--pink-soft);
     letter-spacing: 0.03em;
+    -webkit-user-select: all;
     user-select: all;
 }
 
