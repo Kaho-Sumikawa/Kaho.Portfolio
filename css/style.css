@@ -159,6 +159,10 @@
     height: 100vh;
     min-height: 580px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: var(--nav-h);
+    box-sizing: border-box;
 }
 
 .hero-bg {
@@ -200,27 +204,21 @@
     left: -50px;
 }
 
-.hero-img {
-    top: 150px;
-    scale: 120%;
-    position: absolute;
-    right: 8%;
-    object-fit: contain;
-    object-position: bottom;
-    filter: brightness(70%) blur(3px);
-    opacity: 60%;
-    z-index: 0;
-}
-
-
-.hero-content {
+.hero-container {
     position: relative;
     z-index: 2;
-    padding: calc(var(--nav-h) + 80px) 60px 60px;
-    max-width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
 }
 
-.hero-content h1 {
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 700;
@@ -230,7 +228,7 @@
     margin-bottom: 8px;
 }
 
-.hero-content h2 {
+.hero-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 400;
@@ -239,8 +237,83 @@
     margin-bottom: 36px;
 }
 
-.hero-illustration {
+.hero-photo-wrap {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.hero-illust-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-illust-nomal,
+.hero-illust-smile {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.7s, transform 1s;
+}
+
+.hero-illust-nomal { opacity: 1; }
+.hero-illust-smile { opacity: 0; }
+
+.hero-photo-wrap:hover .hero-illust-nomal,
+.hero-photo-wrap:active .hero-illust-nomal {
+    opacity: 0;
+    transform: scale(1.08);
+}
+
+.hero-photo-wrap:hover .hero-illust-smile,
+.hero-photo-wrap:active .hero-illust-smile {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* hover hint (shared: hero mobile + about) */
+.hover-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 6px;
+    pointer-events: none;
+    transition: opacity 0.35s;
+    animation: hover-float 2s ease-in-out infinite;
+}
+
+.hover-hint-arrow {
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid var(--pink);
+    border-right: 2px solid var(--pink);
+    transform: rotate(-45deg);
+    opacity: 0.75;
+}
+
+.hover-hint span {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+@keyframes hover-float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-5px); }
+}
+
+.hero-photo-wrap:hover .hover-hint,
+.hero-photo-wrap:active .hover-hint {
+    opacity: 0;
 }
 
 .hero-btns {
@@ -407,14 +480,25 @@ section {
     z-index: 2;
 }
 
-.about-photo:hover .about-img-nomal {
+.about-photo-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.about-photo-wrap:hover .about-img-nomal {
     opacity: 0;
     transform: scale(1.1);
 }
 
-.about-photo:hover .about-img-smile {
+.about-photo-wrap:hover .about-img-smile {
     opacity: 1;
     transform: scale(1.2);
+}
+
+.about-photo-wrap:hover .hover-hint {
+    opacity: 0;
 }
 
 
@@ -743,6 +827,50 @@ section {
     transform: scale(1.06);
 }
 
+/* dual-image card */
+.work-card-wide {
+    grid-column: 1 / -1;
+}
+
+.work-thumb-dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.work-thumb-item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.work-thumb-item:first-child {
+    border-right: 2px solid var(--white);
+}
+
+.work-thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.work-card:hover .work-thumb-item img {
+    transform: scale(1.06);
+}
+
+.work-thumb-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 12px 10px;
+    font-size: 0.62rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.52) 0%, transparent 100%);
+    letter-spacing: 0.02em;
+}
+
 /* placeholder gradients for work cards */
 .work-thumb-placeholder {
     width: 100%;
@@ -767,6 +895,10 @@ section {
 
 .work-thumb-placeholder.p-koinobori {
     background: linear-gradient(135deg, #87CEEB 0%, #5BA3D9 45%, #FF7043 75%, #FF8C42 100%);
+}
+
+.work-thumb-placeholder.p-chira {
+    background: linear-gradient(135deg, #a8d8b0 0%, #4caf82 50%, #2e7d5c 100%);
 }
 
 .work-info {
