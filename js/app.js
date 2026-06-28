@@ -5,6 +5,14 @@ const WORK_URLS = {
 // ===================================================
 document.getElementById('link-chira-collection').href = WORK_URLS.chiraCollection;
 
+// ---- Hero illustration tap toggle (touch devices only) ----
+const heroPhotoWrap = document.querySelector('.hero-photo-wrap');
+if (heroPhotoWrap && !window.matchMedia('(hover: hover)').matches) {
+    heroPhotoWrap.addEventListener('click', () => {
+        heroPhotoWrap.classList.toggle('is-smile');
+    });
+}
+
 // ---- Navbar scroll ----
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
