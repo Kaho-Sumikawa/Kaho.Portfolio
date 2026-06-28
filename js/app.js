@@ -1,3 +1,10 @@
+// ===== WORK URLs (後日デプロイ先URLに差し替え) =====
+const WORK_URLS = {
+  chiraCollection: 'https://github.com/kitanokeita/KITBUILD202606_teamF.git',
+};
+// ===================================================
+document.getElementById('link-chira-collection').href = WORK_URLS.chiraCollection;
+
 // ---- Navbar scroll ----
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {

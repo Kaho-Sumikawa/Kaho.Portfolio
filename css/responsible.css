@@ -30,12 +30,8 @@
         grid-column: auto;
     }
 
-    .hero-img {
-        height: 75%;
-    }
-
-    .hero-content {
-        padding: calc(var(--nav-h) + 60px) 40px 40px;
+    .hero-container {
+        gap: 40px;
     }
 }
 
@@ -71,76 +67,38 @@
     }
 
     /* hero */
-    .hero-img {
-        display: none;
-    }
-
     #top {
         height: auto;
         min-height: 100svh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
         padding-bottom: 60px;
     }
 
-    .hero-content {
-        padding: calc(var(--nav-h) + 20px) 24px 20px;
-        max-width: 100%;
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        order: 1;
+        gap: 28px;
     }
 
-    .hero-illustration {
-        display: block;
-        position: relative;
-        width: 170px;
-        height: 170px;
-        margin: 0 auto 20px;
+    .hero-photo-wrap {
+        display: flex;
+        order: -1;
+    }
+
+    .hero-illust-frame {
+        width: 160px;
+        height: 160px;
         border-radius: 50%;
-        overflow: hidden;
         border: 4px solid var(--white);
         box-shadow: 0 6px 24px rgba(240, 98, 146, 0.28);
-        cursor: pointer;
     }
 
-    .hero-illust-nomal,
-    .hero-illust-smile {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        transition: opacity 0.6s, transform 0.8s;
-    }
-
-    .hero-illust-nomal {
-        opacity: 1;
-    }
-
-    .hero-illust-smile {
-        opacity: 0;
-    }
-
-    .hero-illustration:hover .hero-illust-nomal,
-    .hero-illustration:active .hero-illust-nomal {
-        opacity: 0;
-        transform: scale(1.08);
-    }
-
-    .hero-illustration:hover .hero-illust-smile,
-    .hero-illustration:active .hero-illust-smile {
-        opacity: 1;
-        transform: scale(1.08);
-    }
-
-    .hero-content h1 {
+    .hero-text h1 {
         font-size: 2.4rem;
     }
 
-    .hero-content h2 {
+    .hero-text h2 {
         font-size: 1.1rem;
     }
 
@@ -150,10 +108,8 @@
         gap: 32px;
     }
 
-    .about-photo {
-        max-width: 240px;
-        margin: 0 auto;
-        aspect-ratio: 1/1;
+    .about-photo-wrap {
+        display: none;
     }
 
     /* philosophy */
@@ -214,7 +170,7 @@
 
 /* ===== VERY SMALL (≤ 480px) ===== */
 @media (max-width: 480px) {
-    .hero-content h1 {
+    .hero-text h1 {
         font-size: 2rem;
     }
 

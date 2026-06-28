@@ -59,21 +59,20 @@
             <div class="hero-blob hero-blob-2"></div>
         </div>
 
-        <!-- 実際の写真があれば src="" に差し替えてください -->
-        <img src="assets/img/twenty.webp" alt="Sumikawa Kaho" class="hero-img" />
-
-        <div class="hero-content reveal">
-            <div class="hero-illustration">
-                <img class="hero-illust-nomal" src="assets/img/K_illust_nomal.jpg" alt="Kaho Illustration">
-                <img class="hero-illust-smile" src="assets/img/K_illust_smile.jpg" alt="Kaho Illustration">
+        <div class="container hero-container">
+            <div class="hero-text reveal">
+                <h1>Sumikawa Kaho</h1>
+                <h2>Portfolio Site</h2>
             </div>
-            <h1>Sumikawa Kaho</h1>
-            <h2>Portfolio Site</h2>
-            <!-- <div class="hero-btns">
-                <a href="#about" class="btn btn-pink">About</a>
-                <a href="#works" class="btn btn-outline">Works</a>
-                <a href="#contact" class="btn btn-outline">Contact</a>
-            </div> -->
+            <div class="hero-photo-wrap reveal reveal-delay-2">
+                <div class="hero-illust-frame">
+                    <img class="hero-illust-nomal" src="assets/img/K_illust_nomal.jpg" alt="Kaho Illustration">
+                    <img class="hero-illust-smile" src="assets/img/K_illust_smile.jpg" alt="Kaho Illustration">
+                </div>
+                <div class="hover-hint">
+                    <div class="hover-hint-arrow"></div>
+                </div>
+            </div>
         </div>
 
         <div class="scroll-hint">
@@ -87,9 +86,15 @@
         <div class="container">
             <h2 class="section-title reveal">About me</h2>
             <div class="about-grid">
-                <div class="about-photo reveal">
-                    <img class="about-img-nomal" src="assets/img/K_illust_nomal.jpg" alt="角川 花歩" />
-                    <img class="about-img-smile" src="assets/img/K_illust_smile.jpg" alt="角川 花歩" />
+                <div class="about-photo-wrap reveal">
+                    <div class="about-photo">
+                        <img class="about-img-nomal" src="assets/img/K_illust_nomal.jpg" alt="角川 花歩" />
+                        <img class="about-img-smile" src="assets/img/K_illust_smile.jpg" alt="角川 花歩" />
+                    </div>
+                    <div class="hover-hint">
+                        <div class="hover-hint-arrow"></div>
+                        <span>hover</span>
+                    </div>
                 </div>
 
                 <div class="about-info reveal reveal-delay-2">
@@ -97,16 +102,16 @@
                     <span class="about-name-en about-namefont">Sumikawa Kaho</span>
                     <p>
                         大阪出身。2005年生まれ。大学3年生として、近畿大学経営学部に在籍しています。<br><br>
-                        ものづくりが好きで、プログラミングスクールや自主学習を通して、 HTML/CSS・JavaScript を中心に学習しています。
-                        現在はフロントエンド開発に興味を持ち、デザインから実装まで一貫して制作できるよう、日々学習を続けています。<br><br>
-                        また、Unityを使ったゲーム制作やBlenderでの3Dモデリングにも取り組んでいます。
+                        ものづくりが好きで、粘土作品の制作から3Dモデリング、プログラミングへと興味の幅を広げてきました。
+                        現在は学生チームでゲーム開発に取り組みながら、プログラミングスクールや自主学習でWeb開発も学習中です。<br><br>
+                        企画から実装まで、自分の手で一貫して形にできる人を目指しています。
                     </p>
 
                     <div class="about-tags">
                         <span class="tag">大阪出身</span>
                         <span class="tag">近畿大学</span>
                         <span class="tag">経営学部</span>
-                        <span class="tag">フロントエンド志望</span>
+                        <span class="tag">ゲーム企画・エンジニア志望</span>
                         <span class="tag">2028年卒</span>
                     </div>
                 </div>
@@ -168,28 +173,35 @@
                         <i class="devicon-react-original colored"></i>
                     </div>
                     <h4>React</h4>
-                    <p>Reactを使ったWeb制作に興味があり、現在はコンポーネント開発などの基本に触れています。</p>
+                    <p>プログラミングスクールとUdemyでReactを学習しました。
+                        コンポーネント設計やstateを使った状態管理など、
+                        フロントエンド開発の基礎を身につけています。</p>
                 </div>
                 <div class="skill-card reveal reveal-delay-3">
                     <div class="skill-icon">
                         <i class="devicon-typescript-plain colored"></i>
                     </div>
                     <h4>TypeScript</h4>
-                    <p>より安全で保守性の高いコードを書けるよう、TypeScriptを学習中です。</p>
+                    <p>プログラミングスクールとUdemyでTypeScriptを学習しました。
+                        型を意識したコードを書くことで、保守性や安全性を意識した実装を心がけています。</p>
                 </div>
                 <div class="skill-card reveal reveal-delay-1">
                     <div class="skill-icon">
                         <i class="devicon-nodejs-plain-wordmark colored"></i>
                     </div>
-                    <h4>Node.js</h4>
-                    <p>Node.jsを用いたバックエンドの基礎に触れ、Webアプリ開発への理解を深めています。</p>
+                    <h4>Node.js / Express</h4>
+                    <p>学内ハッカソンで開発したWebアプリ「知り合いコレクション」にて、
+                        Node.js・Expressを用いたバックエンド設計とルーティング処理を担当しました。
+                        画面・ルーター・データベースの繋がりを意識した設計を経験しています。</p>
                 </div>
                 <div class="skill-card reveal reveal-delay-2">
                     <div class="skill-icon">
                         <i class="devicon-mysql-plain-wordmark colored"></i>
                     </div>
-                    <h4>MySQL</h4>
-                    <p>データベース設計やCRUD操作など、基礎的なデータ管理を学習しました。</p>
+                    <h4>MySQL / SQLite</h4>
+                    <p>プログラミングスクールでMySQLを使ったデータベース設計を学習しました。
+                        学内ハッカソンではSQLiteを用いて、外部キー制約によるテーブル間の
+                        紐付け設計も実践しています。</p>
                 </div>
 
 
@@ -203,14 +215,22 @@
                         </div>
                     </div>
                     <h4>C# / Unity</h4>
-                    <p>Udemyを通じてC#の基礎を学び、Unityでミニゲームを開発しています。将来的にはSteamでの公開を目指しています。</p>
+                    <p>
+                        Udemyを通じてC#の基礎を学び、Unityでミニゲームを開発しています。
+                        人型キャラクターのモデリング・リギングにも挑戦し、実際にUnity上で
+                        動かしてアニメーションさせる制作も経験しました。
+                        ミニゲーム「こいのぼりゲーム」をunityroomに公開しています。
+                        将来的にはSteamでの公開を目指しています。
+                    </p>
                 </div>
                 <div class="skill-card reveal reveal-delay-2">
                     <div class="skill-icon">
                         <i class="devicon-blender-original colored"></i>
                     </div>
                     <h4>Blender</h4>
-                    <p>基本操作をYouTubeで学び、ローポリモデリングを実践中。3Dモデルを動かせた瞬間がとても楽しかったです。</p>
+                    <p>基本操作をYouTubeで学び、ローポリモデリングを実践しています。
+                        『爆走！近大マグロ』の制作では魚類の3Dモデリングを担当し、
+                        実際にUnity上で動かす制作も経験しました。</p>
                 </div>
             </div>
         </div>
@@ -260,19 +280,21 @@
         <div class="container">
             <h2 class="section-title reveal">Works</h2>
             <div class="works-grid">
-                <a href="https://github.com/Kaho-Sumikawa/Kaho.Portfolio" target="_blank" rel="noopener" class="work-card reveal reveal-delay-1">
+                <a href="https://github.com/Kaho-Sumikawa/Kaho.Portfolio" target="_blank" rel="noopener"
+                    class="work-card reveal reveal-delay-1">
                     <div class="work-thumb">
-                        <div class="work-thumb-placeholder p1"></div>
+                        <img src="assets/img/portfolio.png" alt="Portfolio Site" loading="lazy">
                     </div>
                     <div class="work-info">
                         <div>
                             <h4>Portfolio Site</h4>
-                            <span class="work-year">2026 · HTML / CSS / JS</span>
+                            <span class="work-year">2026 · HTML / CSS / JS /Figma</span>
                         </div>
                         <div class="work-arrow">→</div>
                     </div>
                 </a>
-                <a href="https://unityroom.com/games/koinobori55" target="_blank" rel="noopener" class="work-card reveal reveal-delay-2">
+                <a href="https://unityroom.com/games/koinobori55" target="_blank" rel="noopener"
+                    class="work-card reveal reveal-delay-2">
                     <div class="work-thumb">
                         <img src="assets/img/koinobori.webp" alt="こどもの日ゲーム" loading="lazy">
                     </div>
@@ -284,28 +306,35 @@
                         <div class="work-arrow">→</div>
                     </div>
                 </a>
-                <div class="work-card reveal reveal-delay-3">
+                <a id="link-chira-collection" href="#" target="_blank" rel="noopener"
+                    class="work-card reveal reveal-delay-3">
                     <div class="work-thumb">
-                        <div class="work-thumb-placeholder p3"></div>
+                        <img src="assets/img/siriaiCollection.png" alt="知り合いコレクション" loading="lazy">
                     </div>
                     <div class="work-info">
                         <div>
-                            <h4>Favorite Project</h4>
-                            <span class="work-year">2024</span>
+                            <h4>知り合いコレクション</h4>
+                            <span class="work-year">2026 · EJS / Node.js / Express / SQLite</span>
                         </div>
                         <div class="work-arrow">→</div>
                     </div>
-                </div>
+                </a>
                 <div class="work-card reveal reveal-delay-4">
-                    <div class="work-thumb">
-                        <div class="work-thumb-placeholder p4"></div>
+                    <div class="work-thumb work-thumb-dual">
+                        <div class="work-thumb-item">
+                            <img src="assets/img/fish-model.png" alt="『爆走！近大マグロ』登場魚類モデル" loading="lazy">
+                            <p class="work-thumb-caption">『爆走！近大マグロ』登場魚類モデル（マグロ 稚魚・成魚）</p>
+                        </div>
+                        <div class="work-thumb-item">
+                            <img src="assets/img/character-model.png" alt="オリジナル人型キャラクター" loading="lazy">
+                            <p class="work-thumb-caption">オリジナル人型キャラクター</p>
+                        </div>
                     </div>
                     <div class="work-info">
                         <div>
-                            <h4>Important Project</h4>
-                            <span class="work-year">2024</span>
+                            <h4>3D Modeling</h4>
+                            <span class="work-year">Blender</span>
                         </div>
-                        <div class="work-arrow">→</div>
                     </div>
                 </div>
             </div>
@@ -324,7 +353,8 @@
                         d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
                 </svg>
             </a>
-            <a href="https://github.com/Kaho-Sumikawa" target="_blank" rel="noopener" class="contact-icon" title="GitHub">
+            <a href="https://github.com/Kaho-Sumikawa" target="_blank" rel="noopener" class="contact-icon"
+                title="GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                     <path
                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
