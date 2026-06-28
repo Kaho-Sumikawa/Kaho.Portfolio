@@ -162,6 +162,15 @@
         padding: 72px 24px;
     }
 
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-icons {
+        display: flex;
+        gap: 20px;
+    }
+
     #contact .subtitle {
         margin-top: 12px;
         font-size: 0.95rem;
