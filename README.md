@@ -6,7 +6,7 @@
 自己紹介・スキル・制作物をまとめた個人ポートフォリオサイトです。
 企画から実装まで一貫して自分の手で形にすることを目指し、Web・ゲームの両面で制作に取り組んでいます。
 
-**公開URL:** https://kaho-sumikawa.github.io/Kaho_Portfolio/
+**公開URL:** https://kaho-sumikawa.github.io/Kaho.Portfolio/
 
 ---
 
