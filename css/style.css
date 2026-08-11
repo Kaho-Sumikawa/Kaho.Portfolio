@@ -851,7 +851,8 @@ section {
 
 .work-thumb-dual {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6fr 4fr;
+    aspect-ratio: 3.4 / 1;
 }
 
 .work-thumb-item {
@@ -862,6 +863,27 @@ section {
 
 .work-thumb-item:first-child {
     border-right: 2px solid var(--white);
+}
+
+@media (max-width: 640px) {
+    .work-thumb-dual {
+        grid-template-columns: 1fr;
+        aspect-ratio: auto;
+    }
+
+    .work-thumb-item {
+        height: auto;
+    }
+
+    .work-thumb-item:first-child {
+        aspect-ratio: 2 / 1;
+        border-right: none;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .work-thumb-item:last-child {
+        aspect-ratio: 3 / 2;
+    }
 }
 
 .work-thumb-item img {
