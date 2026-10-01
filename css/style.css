@@ -978,7 +978,13 @@ section {
     transition: all 0.25s;
 }
 
-.work-card:hover .work-arrow {
+.work-card:hover .work-info>.work-arrow {
+    background: var(--pink);
+    color: white;
+    transform: rotate(45deg);
+}
+
+.work-links .work-arrow:hover {
     background: var(--pink);
     color: white;
     transform: rotate(45deg);
