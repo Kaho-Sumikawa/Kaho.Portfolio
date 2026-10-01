@@ -3,7 +3,6 @@ const WORK_URLS = {
   chiraCollection: 'https://github.com/kitanokeita/KITBUILD202606_teamF.git',
 };
 // ===================================================
-document.getElementById('link-chira-collection').href = WORK_URLS.chiraCollection;
 document.getElementById('link-chira-collection-repo').href = WORK_URLS.chiraCollection;
 
 // ---- Hero illustration tap toggle (touch devices only) ----
