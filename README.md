@@ -16,9 +16,11 @@
 
 | 作品 | 概要 | 使用技術 |
 | --- | --- | --- |
+| [セミファイナル](https://unityroom.com/games/semifinal) | 個人制作・実装1日のミニゲーム。セミ側の視点で「死んだふり」の駆け引きを描く（[GitHub](https://github.com/Kaho-Sumikawa/semiFinal)） | Unity / C# / TextMeshPro |
+| [後ろの白い城を白日にしろ](https://unityroom.com/games/shiroioshiro) | unity1week「しろ」お題参加作品（[GitHub](https://github.com/Kaho-Sumikawa/shiro-jam)） | Unity / C# |
 | Portfolio Site | 本ポートフォリオサイト | HTML / CSS / JavaScript / Figma |
 | こいのぼりゲーム | Unityで制作したミニゲーム（unityroom公開） | Unity / C# |
-| 知り合いコレクション | 学内ハッカソンで開発したアバターWebアプリ | EJS / Node.js / Express / SQLite |
+| 知り合いコレクション | 学内ハッカソンで開発したアバターWebアプリ（[開発記事](https://zenn.dev/kaho_s/articles/d9b34f8c325330)） | EJS / Node.js / Express / SQLite |
 | 爆走！近大マグロ | 学生チームでのゲーム開発（3Dモデリング担当） | Unity / Blender |
 
 ---
