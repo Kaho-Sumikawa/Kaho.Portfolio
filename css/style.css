@@ -828,6 +828,7 @@ section {
 }
 
 .work-thumb {
+    display: block;
     position: relative;
     aspect-ratio: 16/10;
     overflow: hidden;
@@ -956,6 +957,12 @@ section {
     font-size: 0.78rem;
     color: var(--text-sub);
     letter-spacing: 0.05em;
+}
+
+.work-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .work-arrow {
