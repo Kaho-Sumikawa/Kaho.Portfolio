@@ -4,6 +4,7 @@ const WORK_URLS = {
 };
 // ===================================================
 document.getElementById('link-chira-collection').href = WORK_URLS.chiraCollection;
+document.getElementById('link-chira-collection-repo').href = WORK_URLS.chiraCollection;
 
 // ---- Hero illustration tap toggle (touch devices only) ----
 const heroPhotoWrap = document.querySelector('.hero-photo-wrap');
